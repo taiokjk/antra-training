@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp
+namespace Day5InClass
 {
     internal class ParamsPassing
     {
@@ -30,7 +30,8 @@ namespace ConsoleApp
 
         public bool isAuthentic(string username, string password, out string msg)
         {
-            if (username == "root" && password == "linux") {
+            if (username == "root" && password == "linux")
+            {
                 msg = "success";
                 return true;
             }

@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using ConsoleApp;
+using Day5InClass;
 using System.Text;
 
 Console.WriteLine("Hello, World!");

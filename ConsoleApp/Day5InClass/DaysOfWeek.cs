@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp
+namespace Day5InClass
 {
     public enum DaysOfWeek
     {
-        Monday = 1, 
-        Tuesday, 
-        Wednesday, 
-        Thursday, 
-        Friday, 
-        Saturday, 
-        Sunday= 0,
+        Monday = 1,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday,
+        Sunday = 0,
     }
 }

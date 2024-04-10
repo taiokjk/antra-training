@@ -1,4 +1,5 @@
 ﻿using Day5;
+using static System.Net.Mime.MediaTypeNames;
 
 /* Understanding Data Types
  * Test your knowledge
@@ -41,7 +42,7 @@ Console.WriteLine("Program 1:");
 understandingDataTypes.NumOfBytes();
 
 // Program 2:
-Console.WriteLine("\n\nProgram2:");
+Console.WriteLine("\n\nProgram 2:");
 understandingDataTypes.PrintCenteries(1);
 
 /* Controlling Flow and Converting Types
@@ -59,7 +60,7 @@ understandingDataTypes.PrintCenteries(1);
  * Q7: = sets the value of the variable
  *      == compares the value of the variable(s)
  * Q8: Yes
- * Q9: _ represetns default behavior
+ * Q9: _ represents default behavior
  * Q10: IEnumerable
  */
 LoopsAndOperators loopsAndOperators = new LoopsAndOperators();
@@ -95,3 +96,100 @@ loopsAndOperators.Greeting();
 
 Console.WriteLine("\n\nProgram 6:");
 loopsAndOperators.Counting();
+
+/* Arrays
+ * Test your knowledge
+ * Q1: We use string for a simple value initilization of a string object
+ *      We use StringBuilder if we need to perform a lot of string manipulations
+ * Q2: The base class of all arrays is the abstract type Array
+ * Q3: We can use Array.Sort for sorting an array
+ * Q4: Property Length is to get the length of an array
+ * Q5: Yes. We can declare an array of type Object
+ * Q6: They are both shallow copy (copy the reference of the objects inside)
+ *      CopyTo needs a destination, Clone returns a new array
+ *      CopyTo is faster than Clone
+ */
+Arrays arrays = new Arrays();
+
+// Program 1:
+Console.WriteLine("Arrays:");
+Console.WriteLine("Program 1:");
+arrays.CopyArray();
+
+// Program 2:
+Console.WriteLine("\n\nProgram 2:");
+arrays.GroceryList();
+
+// Program 3:
+Console.WriteLine("\n\nProgram 3:");
+int[] primeArr = arrays.FindPrimesInRange(0, 100);
+Console.Write("Prime numbers: [");
+for  (int i = 0; i <  primeArr.Length; i++)
+{
+    if (i == 0)
+        Console.Write(primeArr[i]);
+    else
+        Console.Write($", {primeArr[i]}");
+}
+Console.WriteLine("]");
+
+// Program 4:
+Console.WriteLine("\n\nProgram 4:");
+int[] sumRotate = arrays.SumRotate([3, 2, 4, -1], 2);
+Console.Write("sum: [");
+for (int i = 0; i < sumRotate.Length; i++)
+{
+    if (i == 0)
+        Console.Write(sumRotate[i]);
+    else
+        Console.Write($", {sumRotate[i]}");
+}
+Console.WriteLine("]");
+
+sumRotate = arrays.SumRotate([1, 2, 3, 4, 5], 3);
+Console.Write("sum: [");
+for (int i = 0; i < sumRotate.Length; i++)
+{
+    if (i == 0)
+        Console.Write(sumRotate[i]);
+    else
+        Console.Write($", {sumRotate[i]}");
+}
+Console.WriteLine("]");
+
+// Program 5:
+Console.WriteLine("\n\nProgram 5:");
+arrays.LongestSequence([2, 1, 1, 2, 3, 3, 2, 2, 2, 1]);
+arrays.LongestSequence([1, 1, 1, 2, 3, 1, 3, 3]);
+arrays.LongestSequence([4, 4, 4, 4]);
+arrays.LongestSequence([0, 1, 1, 5, 2, 2, 6, 3, 3]);
+
+// Program 7:
+Console.WriteLine("\n\nProgram 7:");
+arrays.MostFrequent([4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3]);
+arrays.MostFrequent([7, 7, 7, 0, 2, 2, 2, 0, 10, 10, 10]);
+
+
+
+
+// Program 1:
+Console.WriteLine("Strings:");
+Console.WriteLine("Program 1:");
+StringPractice.ConvertReverse("sample");
+StringPractice.PrintReverse("24tvcoi92");
+
+// Program 2:
+Console.WriteLine("\n\nProgram 2:");
+StringPractice.ReverseWords("C# is not C++, and PHP is not Delphi!");
+StringPractice.ReverseWords("The quick brown fox jumps over the lazy dog /Yes! Really!!!/.");
+
+// Program 3:
+Console.WriteLine("\n\nProgram 3:");
+StringPractice.ExtractPalindromes("Hi,exe? ABBA! Hog fully a string: ExE. Bob");
+
+// Program 4:
+Console.WriteLine("\n\nProgram 4:");
+StringPractice.ParseURL("https://www.apple.com/iphone");
+StringPractice.ParseURL("ftp://www.example.com/employee");
+StringPractice.ParseURL("https://google.com");
+StringPractice.ParseURL("www.apple.com");
