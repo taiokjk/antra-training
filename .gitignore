@@ -22,8 +22,8 @@
 /ConsoleApp/DapperTutorialCore/obj
 /ConsoleApp/DapperPresentation/bin
 /ConsoleApp/DapperPresentation/obj
-/ConsoleApp/DapperInfrastructure/bin
-/ConsoleApp/DapperInfrastructure/obj
+/ConsoleApp/DappterInfrastructure/bin
+/ConsoleApp/DappterInfrastructure/obj
 
 /EntityFramework/.vs
 /EntityFramework/Core/bin
