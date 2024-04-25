@@ -1,0 +1,16 @@
+C:\Users\Liam\Desktop\antra-training\ConsoleApp\DappterInfrastructure\bin\Debug\net8.0\DappterInfrastructure.deps.json
+C:\Users\Liam\Desktop\antra-training\ConsoleApp\DappterInfrastructure\bin\Debug\net8.0\DappterInfrastructure.dll
+C:\Users\Liam\Desktop\antra-training\ConsoleApp\DappterInfrastructure\bin\Debug\net8.0\DappterInfrastructure.pdb
+C:\Users\Liam\Desktop\antra-training\ConsoleApp\DappterInfrastructure\bin\Debug\net8.0\DapperCore.dll
+C:\Users\Liam\Desktop\antra-training\ConsoleApp\DappterInfrastructure\bin\Debug\net8.0\DapperCore.pdb
+C:\Users\Liam\Desktop\antra-training\ConsoleApp\DappterInfrastructure\obj\Debug\net8.0\DappterInfrastructure.csproj.AssemblyReference.cache
+C:\Users\Liam\Desktop\antra-training\ConsoleApp\DappterInfrastructure\obj\Debug\net8.0\DappterInfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Liam\Desktop\antra-training\ConsoleApp\DappterInfrastructure\obj\Debug\net8.0\DappterInfrastructure.AssemblyInfoInputs.cache
+C:\Users\Liam\Desktop\antra-training\ConsoleApp\DappterInfrastructure\obj\Debug\net8.0\DappterInfrastructure.AssemblyInfo.cs
+C:\Users\Liam\Desktop\antra-training\ConsoleApp\DappterInfrastructure\obj\Debug\net8.0\DappterInfrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Liam\Desktop\antra-training\ConsoleApp\DappterInfrastructure\obj\Debug\net8.0\DappterInfrastructure.sourcelink.json
+C:\Users\Liam\Desktop\antra-training\ConsoleApp\DappterInfrastructure\obj\Debug\net8.0\DappterI.77356DCE.Up2Date
+C:\Users\Liam\Desktop\antra-training\ConsoleApp\DappterInfrastructure\obj\Debug\net8.0\DappterInfrastructure.dll
+C:\Users\Liam\Desktop\antra-training\ConsoleApp\DappterInfrastructure\obj\Debug\net8.0\refint\DappterInfrastructure.dll
+C:\Users\Liam\Desktop\antra-training\ConsoleApp\DappterInfrastructure\obj\Debug\net8.0\DappterInfrastructure.pdb
+C:\Users\Liam\Desktop\antra-training\ConsoleApp\DappterInfrastructure\obj\Debug\net8.0\ref\DappterInfrastructure.dll

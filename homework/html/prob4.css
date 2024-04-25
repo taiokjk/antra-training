@@ -1,0 +1,58 @@
+table, td {
+    border: 1px solid black;
+}
+
+td {
+    min-width: 100px;
+    height: 100px;
+}
+
+.antra {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.top-left {
+    text-align: left;
+    vertical-align: top;
+}
+
+.top-right {
+    text-align: right;
+    vertical-align: top;
+}
+
+.top-center {
+    text-align: center;
+    vertical-align: top;
+}
+
+.bot-left {
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.bot-right {
+    text-align: right;
+    vertical-align: bottom;
+}
+
+.bot-center {
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.center-left {
+    text-align: left;
+    vertical-align: middle;
+}
+
+.center-right {
+    text-align: right;
+    vertical-align: middle;
+}

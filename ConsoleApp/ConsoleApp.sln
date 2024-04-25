@@ -9,15 +9,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day6InClass", "Day6InClass\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day5InClass", "Day5InClass\Day5InClass.csproj", "{63138749-E7A0-4F9E-AF7D-126498A55F60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day7InClass", "Day7InClass\Day7InClass.csproj", "{27DBAECE-CF87-4E47-A397-710C87BAFEE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day7InClass", "Day7InClass\Day7InClass.csproj", "{27DBAECE-CF87-4E47-A397-710C87BAFEE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day6", "Day6\Day6.csproj", "{43850039-F512-46AA-B654-DA7B406116B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day6", "Day6\Day6.csproj", "{43850039-F512-46AA-B654-DA7B406116B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day7", "Day7\Day7.csproj", "{32C829D6-9AAD-4E6A-9D3E-75C1B4F9BFA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day7", "Day7\Day7.csproj", "{32C829D6-9AAD-4E6A-9D3E-75C1B4F9BFA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day8InClass", "Day8InClass\Day8InClass.csproj", "{71437707-B031-4B5A-85F7-560996AE6092}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day8InClass", "Day8InClass\Day8InClass.csproj", "{71437707-B031-4B5A-85F7-560996AE6092}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day8", "Day8\Day8.csproj", "{D2C1F232-569E-4C1E-B8E1-768950D7E3FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day9InClass", "Day9InClass\Day9InClass.csproj", "{4EE4DD7C-6C82-4373-AEF0-428251301DE7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperCore", "DapperCore\DapperCore.csproj", "{DDA73050-A973-41CD-A408-DA5BC79F299B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DappterInfrastructure", "DappterInfrastructure\DappterInfrastructure.csproj", "{36452D70-AE63-4617-8F00-F88F0CF40B2B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DDA73050-A973-41CD-A408-DA5BC79F299B} = {DDA73050-A973-41CD-A408-DA5BC79F299B}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperPresentation", "DapperPresentation\DapperPresentation.csproj", "{DB1ED6F6-A9F4-4700-9131-737D90971651}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DDA73050-A973-41CD-A408-DA5BC79F299B} = {DDA73050-A973-41CD-A408-DA5BC79F299B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +65,22 @@ Global
 		{71437707-B031-4B5A-85F7-560996AE6092}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71437707-B031-4B5A-85F7-560996AE6092}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71437707-B031-4B5A-85F7-560996AE6092}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D2C1F232-569E-4C1E-B8E1-768950D7E3FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D2C1F232-569E-4C1E-B8E1-768950D7E3FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D2C1F232-569E-4C1E-B8E1-768950D7E3FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D2C1F232-569E-4C1E-B8E1-768950D7E3FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EE4DD7C-6C82-4373-AEF0-428251301DE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EE4DD7C-6C82-4373-AEF0-428251301DE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EE4DD7C-6C82-4373-AEF0-428251301DE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EE4DD7C-6C82-4373-AEF0-428251301DE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDA73050-A973-41CD-A408-DA5BC79F299B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDA73050-A973-41CD-A408-DA5BC79F299B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDA73050-A973-41CD-A408-DA5BC79F299B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDA73050-A973-41CD-A408-DA5BC79F299B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36452D70-AE63-4617-8F00-F88F0CF40B2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36452D70-AE63-4617-8F00-F88F0CF40B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36452D70-AE63-4617-8F00-F88F0CF40B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36452D70-AE63-4617-8F00-F88F0CF40B2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB1ED6F6-A9F4-4700-9131-737D90971651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB1ED6F6-A9F4-4700-9131-737D90971651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB1ED6F6-A9F4-4700-9131-737D90971651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB1ED6F6-A9F4-4700-9131-737D90971651}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

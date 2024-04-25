@@ -1,0 +1,13 @@
+table, td {
+    border: 1px solid black;
+}
+
+td {
+    min-width: 100px;
+    height: 100px;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+}
