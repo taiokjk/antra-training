@@ -1,6 +1,7 @@
 using Core.Interfaces.Repositories;
 using Core.Interfaces.Services;
 using Infrastructure.Data;
+using Infrastructure.Helpers;
 using Infrastructure.Repository;
 using Infrastructure.Service;
 using Microsoft.EntityFrameworkCore;
@@ -26,7 +27,8 @@ builder.Services.AddScoped<IRegionService, RegionService>();
 builder.Services.AddScoped<IShipperService, ShipperService>();
 #endregion
 
-
+// Auto mapper
+builder.Services.AddAutoMapper(typeof(ApplicationMapper));
 
 var app = builder.Build();
 

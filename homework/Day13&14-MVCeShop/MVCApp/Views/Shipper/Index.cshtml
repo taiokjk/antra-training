@@ -4,15 +4,18 @@
 @{
 }
 
-@model IEnumerable<RegionResponseModel>
+@model IEnumerable<ShipperResponseModel>
 
-<h1>Region List</h1>
-<a href="/region/create">Add Region</a>
+<h1>Shipper List</h1>
+<a href="/shipper/create">Add Shipper</a>
 <table class="table table-bordered table-hover">
     <thead>
         <tr>
             <th>Id</th>
             <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Contact Person</th>
         </tr>
     </thead>
     <tbody>
@@ -21,11 +24,14 @@
             <tr>
                 <td>@item.Id</td>
                 <td>@item.Name</td>
+                <td>@item.EmailId</td>
+                <td>@item.Phone</td>
+                <td>@item.Contact_Person</td>
                 <td>
-                    <a asp-action="Edit" asp-controller="Region" asp-route-id="@item.Id">
+                    <a asp-action="Edit" asp-controller="Shipper" asp-route-id="@item.Id">
                         Edit
                     </a> |
-                    <a href="/region/delete/@item.Id">Delete</a>
+                    <a href="/shipper/delete/@item.Id">Delete</a>
                 </td>
             </tr>
         }

@@ -11,9 +11,11 @@ namespace Infrastructure.Helpers
         {
             CreateMap<ProductRequestModel, Product>().ReverseMap();
             CreateMap<ProductResponseModel, Product>().ReverseMap();
+            CreateMap<ProductRequestModel, ProductResponseModel>().ReverseMap();
 
             CreateMap<CategoryRequestModel, Category>().ReverseMap();
             CreateMap<CategoryResponseModel, Category>().ReverseMap();
+            CreateMap<CategoryRequestModel, CategoryResponseModel>().ReverseMap();
         }
     }
 }

@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model ShipperRequestModel
+
+<form asp-action="Create" asp-controller="Shipper">
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" name="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="EmailId">Email</label>
+        <input type="text" name="EmailId" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="Phone">Phone Number</label>
+        <input type="text" name="Phone" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="Contact_Person">Contact Person</label>
+        <input type="text" name="Contact_Person" class="form-control" />
+    </div>
+    <button class="btn-primary btn">Save</button>
+</form>
