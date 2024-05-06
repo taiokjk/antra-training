@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  day15-ecommerceapi:
+    image: ${DOCKER_REGISTRY-}day15ecommerceapi
+    build:
+      context: .
+      dockerfile: Day15-EcommerceAPI/Dockerfile
+    ports:
+        - "4040:8080"
+    extra_hosts:
+      - host.docker.internal:host-gateway

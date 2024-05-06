@@ -1,5 +1,6 @@
 ﻿using Core.Models.Request;
 using Core.RepositoryContracts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -25,6 +26,7 @@ namespace Day15_EcommerceAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Post(CategoryRequestModel category)
         {
             return Ok(await _categoryService.InserCategoryAsync(category));
