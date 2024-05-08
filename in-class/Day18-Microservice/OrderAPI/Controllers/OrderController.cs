@@ -1,5 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using OrderAPI.MessageQueue;
+using SharedMessageService;
 
 namespace OrderAPI.Controllers
 {
@@ -7,6 +8,12 @@ namespace OrderAPI.Controllers
     [ApiController]
     public class OrderController : ControllerBase
     {
+        private QueueService queue;
+        public OrderController(IConfiguration configuration)
+        {
+            queue = new QueueService(configuration);
+        }
+
         public async Task<IActionResult> Get()
         {
             HttpClient client = new HttpClient();
@@ -22,5 +29,13 @@ namespace OrderAPI.Controllers
 
             return BadRequest();
         }
-    }
+
+        [HttpPost]
+        public async Task<IActionResult> Post(OrderDetail od)
+        {
+            await queue.SendMessageAsync<OrderDetail>(od, "orderqueue");
+
+            return Ok("Message has been sent");
+        }
+    }    
 }

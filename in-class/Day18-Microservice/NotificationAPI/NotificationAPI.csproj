@@ -16,6 +16,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="MessageQueue\" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SharedMessageService\SharedMessageService.csproj" />
   </ItemGroup>
 

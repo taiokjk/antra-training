@@ -17,3 +17,21 @@ services:
     ports:
         - 43157:8080
 
+
+  notificationapi:
+    image: ${DOCKER_REGISTRY-}notificationapi
+    build:
+      context: .
+      dockerfile: NotificationAPI/Dockerfile
+    ports:
+        - 43158:8080
+
+
+  apigateway:
+    image: ${DOCKER_REGISTRY-}apigateway
+    build:
+      context: .
+      dockerfile: APIGateway/Dockerfile
+    ports:
+        - 43159:8080
+
