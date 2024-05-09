@@ -1,0 +1,29 @@
+<p>
+    This is employee component
+</p>
+
+
+2 + 4 = {{ a + b }}
+<br/>
+
+id: {{employee.Id}} || name: {{employee.Name | lowercase}} || 
+age: {{employee.Age}} || salary: {{employee.Salary | currency:'VND'}} || 
+DOB: {{employee.Dob | date:'short'}}
+<br/>
+
+<input type="text" [value]="employeeName"/>
+<br/>
+
+<input type="button" value="alert" (click)="showMsg()"/>
+<br/>
+
+<div *ngIf="showDiv">
+    ng if structural directive
+</div>
+
+<ol>
+    <li *ngFor="let item of countries; index as i; first as f; last as l; even as e">{{item}} {{i}} {{f}} {{l}} {{e}}</li>
+</ol>
+
+<hr/>
+
